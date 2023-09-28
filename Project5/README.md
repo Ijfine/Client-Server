@@ -52,7 +52,7 @@ Followed by '*FLUSH PRIVILEGES*' command
 
 Exit mysql console by typing '*exit*'.
 
-![Alt text](mysqlsu.png)
+![Alt text](Images/mysqlsu.png)
 
 STEP 3 - On *'mysql-client'* install MySQL client software by typing in this command:
 
@@ -62,7 +62,7 @@ STEP 3 - On *'mysql-client'* install MySQL client software by typing in this com
 
 STEP 4 - To enable the two servers to communicate to each other using local IP address, go to mysql-server instance and create a new inbound rule on the security group which is TCP port 3306. Mysql server listens to port 3306 by default. For security purpose, do not allow all IP address to reach your *'mysql server'* rather allow access to only the local IP address of your *'mysql client'*.
 
-![Alt text](ec2.png)
+![Alt text](Images/ec2.png)
 
 STEP 5 - Configure MySQL server to allow connections from remote host. Run this command:
 
@@ -71,7 +71,7 @@ STEP 5 - Configure MySQL server to allow connections from remote host. Run this 
 ```
 Replace '127.0.0.1' to '0.0.0.0'
 
-![Alt text](conf.png)
+![Alt text](Images/conf.png)
 
 STEP 6 - Connect remotely from mysql client server to mysql database engine using only mysql utility. On your mysql client virtual host, run this command:
 
@@ -89,4 +89,4 @@ Step 7 - To show that you have successfully connected to remote MySQL server, ty
 ```
 It should give you a page like this:
 
-![Alt text](datapg.png)
+![Alt text](Images/datapg.png)
